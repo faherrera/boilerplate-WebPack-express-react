@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev":  "concurrently \" node server.js\" \" webpack -w \" " 
+    "dev": "concurrently \" node server.js\" \" webpack -w \" "
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^3.5.0",
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
     "webpack": "^3.4.1"
   }
 }
