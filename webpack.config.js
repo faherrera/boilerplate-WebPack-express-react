@@ -1,5 +1,12 @@
+//Requires
 var ExtractTextPlugin = require('extract-text-webpack-plugin'); //Extractor de texto .
 
+//Config Requires
+const extractSass = new ExtractTextPlugin({
+    filename: "../css/master.css"
+});
+
+//Config Webpack
 const configWebpack = {
     entry: './src/index.js',    //Punto de entrada
     output:{    //Configurando salida.
@@ -14,15 +21,21 @@ const configWebpack = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                  fallback: "style-loader",
-                  use: "css-loader"})
-            }
+            test: /\.scss$/,
+            use: extractSass.extract({
+                use: [{
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }],
+                // use style-loader in development
+                fallback: "style-loader"
+            })
+        }
         ]
     },
     plugins: [
-        new ExtractTextPlugin("../css/master.css"),
+        extractSass
     ]
 };
 

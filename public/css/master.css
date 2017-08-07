@@ -1,7 +1,5 @@
-body{
-    background: rgba(22, 56, 115, 0.65);
-}
-h1{
-    font-size: 2rem;
-    text-align: center;
-}
+body {
+  background: #0f4911; }
+
+h1 {
+  text-align: center; }
