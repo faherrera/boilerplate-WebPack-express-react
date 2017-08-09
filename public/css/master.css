@@ -393,54 +393,5 @@ template {
 [hidden] {
   display: none; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 body {
-  background: white; }
-
-.wrapper {
-  background: #607D8B;
-  margin: 0 auto; }
-
-.container {
-  width: 90%;
-  margin: 0 auto; }
-
-.header-principal {
-  border: 1px solid red;
-  background: #607D8B; }
-
-/*
-    MENU
- */
-.nav-principal {
-  display: flex;
-  justify-content: space-between; }
-
-.menu-principal {
-  background: #cf9772;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-  list-style: none;
-  flex-grow: 1; }
-
-.logo-container {
-  margin: 0;
-  flex-basis: 150px; }
-  .logo-container img {
-    width: 100%;
-    max-height: 100px; }
-
-.login-container {
-  display: flex; }
-  .login-container button {
-    flex-basis: 200px; }
-  .login-container .login-figure {
-    margin: 0; }
-    .login-container .login-figure img {
-      height: 100px;
-      border-radius: 50%; }
+  background: rgba(103, 162, 251, 0.3); }
