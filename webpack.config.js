@@ -32,17 +32,21 @@ const configWebpack = {
                 }],
                 // use style-loader in development
                 fallback: "style-loader"
-            })
-        }
+                })
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader'
+            }
         ]
     },
     plugins: [
         extractSass,
         new HtmlWebpackPlugin({
-            title: 'Titulo EJS con webpack',    //Generando el titulo
+            // title: 'Titulo EJS con webpack',    //Generando el titulo
             filename: '../index.html',          //Generando el nombre y el lugar donde estará la salida html (..)
-            template: './src/index.template.ejs',   //Indicando donde y cualñ es el template que vamos a utilizar
-            inject: 'body'                      //Agregando la etiqueta body.
+            template: './src/index.pug',   //Indicando donde y cualñ es el template que vamos a utilizar
+            inject: 'body'                      //Agregando la etiqueta body
         })
     ]
 };
