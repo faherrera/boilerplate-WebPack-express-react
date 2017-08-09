@@ -1,9 +1,9 @@
+// Configuraciones.
+@import "./tools/normalize";
+@import "./tools/variables";
 
-$variable : rgb(15, 73, 17);
-
-//
+// Base styles.
 @import "./components/base.scss";
 
-h1{
-    text-align: center;
-}
+//template
+@import "./components/template/header";

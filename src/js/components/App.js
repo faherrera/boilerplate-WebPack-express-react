@@ -1,9 +1,12 @@
+//Components
 import React, {Component} from 'react';
+
+//Assets
 
 class App extends Component {
     render() {
         return(
-            <h1> Hello world! desde React! y además con concurrently</h1>
+            <h1> Desde React .</h1>
         );
     }
 }
